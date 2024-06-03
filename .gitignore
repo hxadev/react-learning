@@ -1,0 +1,3 @@
+node_modules/
+*.lock
+react-vite-counter-app/node_modules/
