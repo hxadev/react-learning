@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React App</title>
+</head>
+<body>
+    <!--Here the react app will render-->
+    <div id="root"></div>
+
+    <script type="text/babel" > // This is used to add support of React to the browsers
+        const divRoot=document.getElementById('root'); // This will get the div root
+        
+        const nombre='Picoro'
+        
+        const h1Tag=<h1>Hello World i´m {nombre}</h1>; // This will create the h1 tag
+        ReactDOM.render(h1Tag,divRoot); // This will render the h1 tag in the div root
+        
+
+    </script>
+</body>
+</html>
